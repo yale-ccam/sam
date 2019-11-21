@@ -1,17 +1,21 @@
 import asyncio
 import csv_generator as format
 import time
+import os
 
 from aiohttp import ClientSession
 
 from aioambient import Client
 
+API_KEY = str(os.environ.get('API_KEY'))
+APP_KEY = str(os.environ.get('APP_KEY'))
+
 async def main() -> None:
     """Create the aiohttp session and run the example."""
     async with ClientSession() as websession:
         client = Client(
-        '---SECRET TOKEN---',
-        '---SECRET TOKEN---',
+        API_KEY,
+        APP_KEY,
         websession)
 
         # Get all devices in an account:
