@@ -24,10 +24,9 @@ pip install aioambient
 
 ## Execution
 
-Before executing the WeatherAsyncioAPI.py file, you need to get the APP\_KEY and API\_KEY for your Ambient Weather Machine. [You can find it on your Ambient Weather Dashboard](https://dashboard.ambientweather.net). These are keys that are unique to your weather machine so make sure to keep them secret.
+Before executing the WeatherAsyncioAPI.py file, you need to get the APP\_KEY and API\_KEY for your Ambient Weather Machine. You can find it on your [Ambient Weather Dashboard](https://dashboard.ambientweather.net). These are keys that are unique to your weather machine so make sure to keep them secret.
 
 Next, you should clone the repository to your machine using:
-
 ```
 git clone https://github.com/yale-ccam/sam.git
 ```
@@ -42,10 +41,6 @@ To retrieve the data and write it to weather.txt, launch the following
 ```
 python3 WeatherAsyncioAPI.py
 ```
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
 
 ## Acknowledgments
 
