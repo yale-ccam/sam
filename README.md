@@ -33,8 +33,9 @@ git clone https://github.com/yale-ccam/sam.git
 
 Using the keys you have acquired, you want to set your environment variables.
 ```
-export APP_KEY=<<YOUR APP KEY>>
-export API_KEY=<<YOUR API KEY>>
+export APP_KEY=<<Your APP Key>>
+export API_KEY=<<Your API Key>>
+export MAC_ADD=<<Your MAC Address>>
 ```
 
 To retrieve the data and write it to weather.txt, launch the following
