@@ -54,3 +54,4 @@ coverage.xml
 #Project-Specific Folders
 sam-env/
 sam-env/*
+const.py

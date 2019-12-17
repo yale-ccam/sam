@@ -1,0 +1,11 @@
+API_KEY = None
+APP_KEY = None
+MAC_ADD = None
+
+if __name__ = '__main__':
+	if not API_KEY:
+		return 'API Key missing'
+	if not APP_KEY:
+		return 'Application Key missing'
+	if not MAC_ADD:
+		return 'MAC Address missing'
