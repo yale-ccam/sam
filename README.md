@@ -4,18 +4,13 @@
 
 ## How to Use It
 
-While the Ambient Weather API helper libraries are in various languages, Sam was created mostly with python 3.7. It may work with 3.6 and 3.8. As of the current state, Sam outputs weather data into a csv file and a txt file. These files would be the basis for data visualizations. 
+While the Ambient Weather API helper libraries are in various languages, Sam was created mostly with python 3.7. As of the current state, Sam outputs weather data into a csv file and a txt file. These files would be the basis for data visualizations.
 
 ## Dependencies
 
 Sam has been created and tested on a linux machine with Python 3.7. Everything described is from the perspective of this linux machine with Python 3.7. Unless you know what you are doing, I would suggest you to follow these instructions from a Unix based terminal of your own.
 
-You should not need to install any python packages. You can enter the virtual environment from the sam directory by doing:
-
-``` 
-source bin/activate
-```
-This would set you up with all the packages you would need. However, if you still need to know the dependencies, you can install the following packages:
+Install the following packages:
 
 ```
 pip install asyncio
@@ -24,23 +19,25 @@ pip install aioambient
 
 ## Execution
 
-Before executing the WeatherAsyncioAPI.py file, you need to get the APP\_KEY and API\_KEY for your Ambient Weather Machine. You can find it on your [Ambient Weather Dashboard](https://dashboard.ambientweather.net). These are keys that are unique to your weather machine so make sure to keep them secret.
+Before executing the WeatherAsyncioAPI.py file, you need to get the Application key, API key, and MAC address for your Ambient Weather Machine. You can find it on your [Ambient Weather Dashboard](https://dashboard.ambientweather.net). These are keys that are unique to your weather machine so make sure to keep them secret.
 
 Next, you should clone the repository to your machine using:
 ```
 git clone https://github.com/yale-ccam/sam.git
 ```
 
-Using the keys you have acquired, you want to set your environment variables.
+Using the keys you have acquired, you want to set your enter your keys into the const.py.example file.
 ```
-export APP_KEY=<<Your APP Key>>
-export API_KEY=<<Your API Key>>
-export MAC_ADD=<<Your MAC Address>>
+APP_KEY="<<Your APP Key>>"
+API_KEY="<<Your API Key>>"
+MAC_ADD="<<Your MAC Address>>"
 ```
+After you have set the variables, you can remove the extension .example from the file.
+
 
 To retrieve the data and write it to weather.txt, launch the following
 ```
-python3 WeatherAsyncioAPI.py
+python3 weatherRESTAPI.py
 ```
 
 ## Acknowledgments
