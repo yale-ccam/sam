@@ -1,7 +1,7 @@
 import asyncio
 import csv_generator as csvify
 import time
-import const
+from const import API_KEY, APP_KEY, MAC_ADD
 from aiohttp import ClientSession
 from aioambient import Client
 
