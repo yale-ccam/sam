@@ -52,6 +52,6 @@ coverage.xml
 .pytest_cache/
 
 #Project-Specific Folders
-sam-env/
-sam-env/*
+.env
+.env/*
 const.py
