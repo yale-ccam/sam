@@ -8,7 +8,7 @@ While the Ambient Weather API helper libraries are in various languages, Sam was
 
 ## Dependencies
 
-Sam has been created and tested on a linux machine with Python 3.7. Everything described is from the perspective of this linux machine with Python 3.7. Unless you know what you are doing, I would suggest you to follow these instructions from a Unix based terminal of your own.
+Sam has been created and tested on a linux machine with Python 3.7. Everything described is from the perspective of this Linux machine with Python 3.7. Unless you know what you are doing, I would suggest you to follow these instructions from a Unix based terminal of your own.
 
 Install the following packages:
 
